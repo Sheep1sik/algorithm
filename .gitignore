@@ -1,0 +1,13 @@
+# Compiled binaries
+*.out
+*.o
+*.exe
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Test input files (optional - remove this line if you want to track them)
+# input.txt
