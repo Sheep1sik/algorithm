@@ -5,31 +5,28 @@
 
 if [ -z "$1" ]; then
     echo "사용법: ./run.sh <파일명.cpp>"
-    echo "예시:   ./run.sh solution.cpp"
-    echo "        ./run.sh solution.cpp < input.txt"
     exit 1
 fi
 
 FILE="$1"
 NAME="${FILE%.cpp}"
+GCC="/usr/local/bin/g++-15"
 
-# Homebrew GCC 경로 자동 탐지
-GCC=$(ls /usr/local/bin/g++-* 2>/dev/null | sort -V | tail -1)
-if [ -z "$GCC" ]; then
-    GCC=$(ls /opt/homebrew/bin/g++-* 2>/dev/null | sort -V | tail -1)
-fi
-if [ -z "$GCC" ]; then
-    echo "Error: GCC를 찾을 수 없습니다. brew install gcc 를 먼저 실행하세요."
+if [ ! -f "$GCC" ]; then
+    echo "Error: g++-15를 찾을 수 없습니다."
     exit 1
 fi
 
-echo "컴파일 중... ($GCC)"
+echo "컴파일 중..."
 $GCC -std=c++17 -O2 -Wall -o "$NAME" "$FILE"
 
 if [ $? -eq 0 ]; then
-    echo "실행 중..."
     echo "────────────────────"
-    ./"$NAME"
+    if [ -t 0 ]; then
+        ./"$NAME" </dev/tty
+    else
+        ./"$NAME"
+    fi
     echo ""
     echo "────────────────────"
     echo "완료!"
