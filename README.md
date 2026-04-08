@@ -28,6 +28,7 @@ C++ 알고리즘 문제 풀이 저장소
 ## Math
 |  |
 | ------- |
+| [0412-fizz-buzz](https://github.com/Sheep1sik/algorithm/tree/master/0412-fizz-buzz) |
 | [2235-add-two-integers](https://github.com/Sheep1sik/algorithm/tree/master/2235-add-two-integers) |
 ## Tree
 |  |
@@ -50,4 +51,12 @@ C++ 알고리즘 문제 풀이 저장소
 |  |
 | ------- |
 | [1672-richest-customer-wealth](https://github.com/Sheep1sik/algorithm/tree/master/1672-richest-customer-wealth) |
+## String
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/Sheep1sik/algorithm/tree/master/0412-fizz-buzz) |
+## Simulation
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/Sheep1sik/algorithm/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->
