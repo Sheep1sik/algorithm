@@ -41,8 +41,13 @@ C++ 알고리즘 문제 풀이 저장소
 |  |
 | ------- |
 | [1480-running-sum-of-1d-array](https://github.com/Sheep1sik/algorithm/tree/master/1480-running-sum-of-1d-array) |
+| [1672-richest-customer-wealth](https://github.com/Sheep1sik/algorithm/tree/master/1672-richest-customer-wealth) |
 ## Prefix Sum
 |  |
 | ------- |
 | [1480-running-sum-of-1d-array](https://github.com/Sheep1sik/algorithm/tree/master/1480-running-sum-of-1d-array) |
+## Matrix
+|  |
+| ------- |
+| [1672-richest-customer-wealth](https://github.com/Sheep1sik/algorithm/tree/master/1672-richest-customer-wealth) |
 <!---LeetCode Topics End-->
