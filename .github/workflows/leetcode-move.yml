@@ -1,0 +1,38 @@
+name: Move LeetCode Files
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Move LeetCode folders
+        run: |
+          shopt -s nullglob
+          moved=false
+          for dir in [0-9][0-9][0-9][0-9]-*/; do
+            mkdir -p LeetCode
+            mv "$dir" "LeetCode/"
+            echo "Moved: $dir -> LeetCode/$dir"
+            moved=true
+          done
+          if [ "$moved" = false ]; then
+            echo "No LeetCode folders to move."
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Move LeetCode solutions to LeetCode/ folder"
+            git push
+          fi
