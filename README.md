@@ -29,4 +29,12 @@ C++ 알고리즘 문제 풀이 저장소
 |  |
 | ------- |
 | [2235-add-two-integers](https://github.com/Sheep1sik/algorithm/tree/master/2235-add-two-integers) |
+## Tree
+|  |
+| ------- |
+| [2236-root-equals-sum-of-children](https://github.com/Sheep1sik/algorithm/tree/master/2236-root-equals-sum-of-children) |
+## Binary Tree
+|  |
+| ------- |
+| [2236-root-equals-sum-of-children](https://github.com/Sheep1sik/algorithm/tree/master/2236-root-equals-sum-of-children) |
 <!---LeetCode Topics End-->
