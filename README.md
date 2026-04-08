@@ -37,4 +37,12 @@ C++ 알고리즘 문제 풀이 저장소
 |  |
 | ------- |
 | [2236-root-equals-sum-of-children](https://github.com/Sheep1sik/algorithm/tree/master/2236-root-equals-sum-of-children) |
+## Array
+|  |
+| ------- |
+| [1480-running-sum-of-1d-array](https://github.com/Sheep1sik/algorithm/tree/master/1480-running-sum-of-1d-array) |
+## Prefix Sum
+|  |
+| ------- |
+| [1480-running-sum-of-1d-array](https://github.com/Sheep1sik/algorithm/tree/master/1480-running-sum-of-1d-array) |
 <!---LeetCode Topics End-->
